@@ -7,7 +7,7 @@ The repository contains:
 - Codex workflow skills under `.codex/skills`
 - Python stage tools under `src/scope`
 - runtime configuration examples under `configs`
-- Gen-Arena materialization and evaluation utilities
+- Gen-Arena materialization and evaluation utilities for the public [Gen-Arena dataset](https://huggingface.co/datasets/rentianfei122/Gen-Arena)
 
 For the design rationale, see [docs/architecture.md](docs/architecture.md).
 
@@ -127,7 +127,7 @@ Typical outputs include:
 
 ## Gen-Arena
 
-This repository does not bundle benchmark data. Point the tools to your local Gen-Arena copy.
+This repository does not bundle benchmark data. Download the public [Gen-Arena dataset](https://huggingface.co/datasets/rentianfei122/Gen-Arena) from Hugging Face and point the tools to your local copy.
 
 Materialize Gen-Arena `eval.jsonl` files into separate runtime and evaluation packets:
 
