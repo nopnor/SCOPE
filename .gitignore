@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Local runtime artifacts.
+outputs/
+exports/
+temp/
+tmp/
+*.log
+*.zip
+
+# Local secrets. Keep configs/scope.example.env tracked.
+.env
+*.local.env
+configs/*.local.env

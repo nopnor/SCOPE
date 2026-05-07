@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scope-agentic-image"
+version = "0.1.0"
+description = "SCOPE: agent-facing skill orchestration for constraint-aware image generation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = ["Pillow>=10.0", "requests>=2.31"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+scope-eval = "scope.cli.evaluate:main"
+scope-stage = "scope.cli.stage:main"
+scope-benchmark = "scope.cli.benchmark:main"
+scope-search = "scope.cli.search:main"
+scope-gen-arena-eval = "scope.cli.gen_arena_eval:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

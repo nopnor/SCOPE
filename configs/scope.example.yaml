@@ -1,0 +1,23 @@
+controller:
+  owner: outer_agent
+  agent_family: codex
+
+runtime:
+  image_provider: jdcloud_gemini
+  image_base_url: https://modelservice.jdcloud.com/v1
+  image_model: Gemini 3-Pro-Image-Preview
+  image_edit_model: Gemini 3-Pro-Image-Preview
+  judge_provider: jdcloud_gemini
+  judge_base_url: https://modelservice.jdcloud.com/v1
+  judge_model: Gemini 3-Pro-Preview
+  search_provider: serper
+  search_num_results: 5
+
+workflow:
+  max_iterations: 3
+  enable_retriever: true
+  enable_reasoner: true
+  enable_repairer: true
+
+artifacts:
+  output_root: outputs
