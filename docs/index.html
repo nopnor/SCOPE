@@ -58,29 +58,29 @@
           <span>Tianfei Ren<sup>1</sup></span>
           <span>Zhipeng Yan<sup>1</sup></span>
           <span>Yiming Zhao<sup>1</sup></span>
-          <span>Zhen Fang<sup>1,*</sup></span>
-          <span>Yu Zeng<sup>1,*</sup></span>
+          <span>Zhen Fang<sup>1*</sup></span>
+          <span>Yu Zeng<sup>1*</sup></span>
           <span>Guohui Zhang<sup>1</sup></span>
           <span>Hang Xu<sup>1</sup></span>
           <span>Xiaoxiao Ma<sup>1</sup></span>
           <span>Shiting Huang<sup>1</sup></span>
           <span>Ke Xu<sup>1</sup></span>
-          <span>Wenxuan Huang<sup>2,3</sup></span>
-          <span>Lionel Z. Wang<sup>4,5</sup></span>
+          <span>Wenxuan Huang</span>
+          <span>Lionel Z. Wang<sup>2,3</sup></span>
           <span>Lin Chen<sup>1</sup></span>
           <span>Zehui Chen<sup>1</sup></span>
           <span>Jie Huang<sup>1</sup></span>
-          <span>Feng Zhao<sup>1,&dagger;</sup></span>
+          <span>Feng Zhao<sup>1&dagger;</sup></span>
         </div>
 
         <div class="affiliations">
           <p><sup>1</sup>MoE Key Laboratory of Brain-inspired Intelligent Perception and Cognition, University of Science and Technology of China</p>
-          <p><sup>2</sup>CUHK MMLab &nbsp; <sup>3</sup>East China Normal University &nbsp; <sup>4</sup>The Hong Kong Polytechnic University &nbsp; <sup>5</sup>Nanyang Technological University</p>
+          <p><sup>2</sup>The Hong Kong Polytechnic University &nbsp; <sup>3</sup>Nanyang Technological University</p>
           <p><sup>*</sup>Project lead &nbsp; <sup>&dagger;</sup>Corresponding author</p>
         </div>
 
         <div class="actions">
-          <a class="button primary" href="#resources">📄 Paper pending</a>
+          <a class="button primary" href="#">📄 Paper pending</a>
           <a class="button" href="https://github.com/nopnor/SCOPE">&lt;/&gt; Code</a>
           <a class="button" href="https://huggingface.co/datasets/rentianfei122/Gen-Arena">🏆 Gen-Arena</a>
         </div>
@@ -89,8 +89,14 @@
       <figure class="teaser paper-width">
         <img src="assets/teaser_project_light.jpg" alt="SCOPE teaser with diverse complex image generation examples" />
         <figcaption>
-          SCOPE targets complex visual intents across reference-heavy, compositional, knowledge-intensive, and
-          layout-sensitive scenes by tracking entities and constraints as persistent semantic commitments.
+          Existing text-to-image pipelines can retrieve facts, verify outputs, and repair
+          images, but they often lose track of which semantic commitment each operation is resolving, a discontinuity
+          we term the <strong>Conceptual Rift</strong>. SCOPE decomposes each prompt into an evolving structured
+          specification of entities, constraints, and unknowns. It conditionally invokes retrieval, reasoning, and
+          repair skills for unresolved or violated commitments, and uses verification to route the generation
+          lifecycle. The examples above illustrate faithful generation across knowledge-intensive events,
+          reference-heavy intellectual properties, and multi-entity compositions with precise relation, layout, and
+          attribute constraints.
         </figcaption>
       </figure>
 
@@ -291,15 +297,6 @@
           Some examples use recognizable public characters, brands, or venues as research stress tests for
           reference-grounded generation.
         </p>
-      </section>
-
-      <section class="section paper-width" id="resources">
-        <h2>Resources</h2>
-        <div class="resource-list">
-          <span><strong>Paper:</strong> release pending</span>
-          <a href="https://github.com/nopnor/SCOPE"><strong>Code:</strong> GitHub repository</a>
-          <a href="https://huggingface.co/datasets/rentianfei122/Gen-Arena"><strong>Data:</strong> Gen-Arena on Hugging Face</a>
-        </div>
       </section>
 
       <section class="section paper-width" id="bibtex">
