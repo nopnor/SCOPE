@@ -198,81 +198,91 @@
         <div class="results-grid">
           <article class="result-card wide">
             <h3>Full Gen-Arena Category Results</h3>
-            <table>
-              <thead>
-                <tr><th>Method</th><th>Cartoon</th><th>Game</th><th>Sports</th><th>Ent.</th><th>Comp.</th><th>Ceremony</th><th>Overall</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Nano Banana</td><td>0.02</td><td>0.00</td><td>0.16</td><td>0.14</td><td>0.10</td><td>0.00</td><td>0.07</td></tr>
-                <tr><td>Nano Banana Pro</td><td>0.04</td><td>0.00</td><td>0.34</td><td>0.16</td><td>0.18</td><td>0.54</td><td>0.21</td></tr>
-                <tr><td>Qwen-Image</td><td>0.00</td><td>0.00</td><td>0.10</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.02</td></tr>
-                <tr><td>Z-Image-Turbo</td><td>0.00</td><td>0.00</td><td>0.09</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.01</td></tr>
-                <tr><td>FLUX.1-dev</td><td>0.00</td><td>0.00</td><td>0.03</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.01</td></tr>
-                <tr class="highlight"><td>SCOPE</td><td>0.52</td><td>0.46</td><td>0.72</td><td>0.62</td><td>0.52</td><td>0.74</td><td>0.60</td></tr>
-              </tbody>
-            </table>
+            <div class="table-scroll">
+              <table class="results-table category-table">
+                <thead>
+                  <tr><th>Method</th><th>Cartoon</th><th>Game</th><th>Sports</th><th>Ent.</th><th>Comp.</th><th>Ceremony</th><th>Overall</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Nano Banana</td><td>0.02</td><td>0.00</td><td>0.16</td><td>0.14</td><td>0.10</td><td>0.00</td><td>0.07</td></tr>
+                  <tr><td>Nano Banana Pro</td><td>0.04</td><td>0.00</td><td>0.34</td><td>0.16</td><td>0.18</td><td>0.54</td><td>0.21</td></tr>
+                  <tr><td>Qwen-Image</td><td>0.00</td><td>0.00</td><td>0.10</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.02</td></tr>
+                  <tr><td>Z-Image-Turbo</td><td>0.00</td><td>0.00</td><td>0.09</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.01</td></tr>
+                  <tr><td>FLUX.1-dev</td><td>0.00</td><td>0.00</td><td>0.03</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.01</td></tr>
+                  <tr class="highlight"><td>SCOPE</td><td>0.52</td><td>0.46</td><td>0.72</td><td>0.62</td><td>0.52</td><td>0.74</td><td>0.60</td></tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="result-card">
             <h3>Gen-Arena EGIP</h3>
-            <table>
-              <thead>
-                <tr><th>Method</th><th>Overall</th><th>Sports</th><th>Ceremony</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Nano Banana</td><td>0.07</td><td>0.16</td><td>0.00</td></tr>
-                <tr><td>Nano Banana Pro</td><td>0.21</td><td>0.34</td><td>0.54</td></tr>
-                <tr><td>Qwen-Image</td><td>0.02</td><td>0.10</td><td>0.00</td></tr>
-                <tr><td>Z-Image-Turbo</td><td>0.01</td><td>0.09</td><td>0.00</td></tr>
-                <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.72</td><td>0.74</td></tr>
-              </tbody>
-            </table>
+            <div class="table-scroll">
+              <table class="results-table metric-table">
+                <thead>
+                  <tr><th>Method</th><th>Overall</th><th>Sports</th><th>Ceremony</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Nano Banana</td><td>0.07</td><td>0.16</td><td>0.00</td></tr>
+                  <tr><td>Nano Banana Pro</td><td>0.21</td><td>0.34</td><td>0.54</td></tr>
+                  <tr><td>Qwen-Image</td><td>0.02</td><td>0.10</td><td>0.00</td></tr>
+                  <tr><td>Z-Image-Turbo</td><td>0.01</td><td>0.09</td><td>0.00</td></tr>
+                  <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.72</td><td>0.74</td></tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="result-card">
             <h3>Diagnostic Pass Rates</h3>
-            <table>
-              <thead>
-                <tr><th>Method</th><th>EGIP</th><th>Entity</th><th>Gated Constraint</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Nano Banana Pro</td><td>0.21</td><td>0.82</td><td>0.59</td></tr>
-                <tr><td>Qwen-Image</td><td>0.02</td><td>0.83</td><td>0.49</td></tr>
-                <tr><td>Z-Image-Turbo</td><td>0.01</td><td>0.84</td><td>0.48</td></tr>
-                <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.92</td><td>0.83</td></tr>
-              </tbody>
-            </table>
+            <div class="table-scroll">
+              <table class="results-table metric-table">
+                <thead>
+                  <tr><th>Method</th><th>EGIP</th><th>Entity</th><th>Gated Constraint</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Nano Banana Pro</td><td>0.21</td><td>0.82</td><td>0.59</td></tr>
+                  <tr><td>Qwen-Image</td><td>0.02</td><td>0.83</td><td>0.49</td></tr>
+                  <tr><td>Z-Image-Turbo</td><td>0.01</td><td>0.84</td><td>0.48</td></tr>
+                  <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.92</td><td>0.83</td></tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="result-card">
             <h3>Ablation</h3>
-            <table>
-              <thead>
-                <tr><th>Method</th><th>EGIP</th><th>Gated Constraint</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Direct single</td><td>0.21</td><td>0.59</td></tr>
-                <tr><td>Direct best-of-3</td><td>0.40</td><td>0.71</td></tr>
-                <tr><td>SCOPE w/o retrieval and reasoning</td><td>0.22</td><td>0.60</td></tr>
-                <tr><td>SCOPE w/o repair</td><td>0.42</td><td>0.72</td></tr>
-                <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.83</td></tr>
-              </tbody>
-            </table>
+            <div class="table-scroll">
+              <table class="results-table metric-table">
+                <thead>
+                  <tr><th>Method</th><th>EGIP</th><th>Gated Constraint</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Direct single</td><td>0.21</td><td>0.59</td></tr>
+                  <tr><td>Direct best-of-3</td><td>0.40</td><td>0.71</td></tr>
+                  <tr><td>SCOPE w/o retrieval and reasoning</td><td>0.22</td><td>0.60</td></tr>
+                  <tr><td>SCOPE w/o repair</td><td>0.42</td><td>0.72</td></tr>
+                  <tr class="highlight"><td>SCOPE</td><td>0.60</td><td>0.83</td></tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="result-card">
             <h3>External Benchmarks</h3>
-            <table>
-              <thead>
-                <tr><th>Benchmark</th><th>SCOPE</th><th>Best compared baseline</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>WISE-V Overall</td><td>0.907</td><td>0.876</td></tr>
-                <tr><td>MindBench Knowledge</td><td>0.59</td><td>0.40</td></tr>
-                <tr><td>MindBench Reasoning</td><td>0.63</td><td>0.44</td></tr>
-                <tr><td>MindBench Overall</td><td>0.61</td><td>0.41</td></tr>
-              </tbody>
-            </table>
+            <div class="table-scroll">
+              <table class="results-table external-table">
+                <thead>
+                  <tr><th>Benchmark</th><th>SCOPE</th><th>Best compared baseline</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>WISE-V Overall</td><td>0.907</td><td>0.876</td></tr>
+                  <tr><td>MindBench Knowledge</td><td>0.59</td><td>0.40</td></tr>
+                  <tr><td>MindBench Reasoning</td><td>0.63</td><td>0.44</td></tr>
+                  <tr><td>MindBench Overall</td><td>0.61</td><td>0.41</td></tr>
+                </tbody>
+              </table>
+            </div>
           </article>
           <figure class="paper-figure results-figure">
             <img src="assets/figures/compare.jpg" alt="Qualitative comparison between SCOPE and direct generation baselines" />

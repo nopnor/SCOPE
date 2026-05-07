@@ -323,40 +323,78 @@ figcaption {
   font-size: 14px;
 }
 
-table {
+.table-scroll {
   width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-  table-layout: fixed;
+  margin-top: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
 }
 
-th,
-td {
+.results-table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.metric-table {
+  min-width: 500px;
+}
+
+.category-table {
+  min-width: 860px;
+}
+
+.external-table {
+  min-width: 500px;
+}
+
+.results-table th,
+.results-table td {
   padding: 10px 12px;
   border-bottom: 1px solid var(--line);
   text-align: center;
   vertical-align: middle;
 }
 
-th {
+.results-table th {
   color: var(--muted);
   font-weight: 700;
   background: var(--soft);
   white-space: nowrap;
 }
 
-th:first-child,
-td:first-child {
+.results-table th:first-child,
+.results-table td:first-child {
+  min-width: 160px;
   text-align: left;
+  white-space: normal;
 }
 
-tr.highlight td {
+.category-table th:first-child,
+.category-table td:first-child {
+  min-width: 175px;
+}
+
+.external-table th:first-child,
+.external-table td:first-child {
+  min-width: 190px;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.results-table tr.highlight td {
   color: var(--blue);
   font-weight: 800;
   background: rgba(49, 95, 189, 0.06);
 }
 
-tbody tr:hover td {
+.results-table tbody tr:hover td {
   background: rgba(49, 95, 189, 0.03);
 }
 
@@ -541,6 +579,19 @@ pre {
 
   .subtitle {
     font-size: 17px;
+  }
+
+  .result-card {
+    padding: 14px;
+  }
+
+  .results-table {
+    font-size: 13px;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 8px 10px;
   }
 
   .stat-grid {
